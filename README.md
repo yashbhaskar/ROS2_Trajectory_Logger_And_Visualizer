@@ -1,8 +1,14 @@
-# ROS2_Trajectory_Logger_And_Visualizer
-ROS2 Trajectory Logger &amp; Visualizer 📌 A ROS2 package for collecting, saving, and visualizing robot trajectories. It includes a node to publish and store trajectories in JSON, CSV, or YAML and another node to read and visualize them. Ideal for robotics navigation and path analysis in ROS2. 🚀
-![Untitled Diagram drawio](https://github.com/user-attachments/assets/df02fc11-fba3-455a-8a63-4b5681cc27de)
+# 🚀ROS2 Trajectory Logger & Visualizer📍
+This ROS2 package enables real-time trajectory collection, storage, and visualization for mobile robots. It consists of two key nodes:
 
+✅ Trajectory Publisher and Saver Node
+    📝 Collects and publishes the robot's trajectory as a marker array.
+    💾 Provides a ROS service to save trajectory data in JSON, CSV, or YAML formats.
+    ⏳ Allows users to specify a time duration for saving recent trajectory data.
 
-![Untitled Diagram drawio](https://github.com/user-attachments/assets/c04370c5-1810-4e73-b45e-0ab698372801)
+✅ Trajectory Reader and Publisher Node
+    📂 Reads saved trajectory files.
+    🔄 Transforms the trajectory to the odom frame.
+    📡 Publishes the transformed trajectory for visualization.
 
-
+This package is ideal for path tracking, debugging, and performance analysis in robotics applications using ROS2. 🤖✨
