@@ -72,21 +72,9 @@ In RViz, click "Add" → Select "MarkerArray" → Set the topic to /read_traject
 Now, you should see the robot's path displayed!
 
 ---
-
-## 📂 Project Structure:
-```
-trajectory_logger/
-│── include/
-│   ├── trajectory_logger/
-│── src/
-│   ├── trajectory_publisher.cpp    # Trajectory Publisher and Saver Node
-│   ├── trajectory_reader.cpp       # Trajectory Reader and Publisher Node
-│── srv/
-│   ├── SaveTrajectory.srv
-│── CMakeLists.txt                  # CMake build configuration
-│── package.xml
-│── README.md
-```
+## 🎯 Final Result: Visualized Robot Trajectory in RViz:
+![Screenshot from 2025-03-04 23-53-37](https://github.com/user-attachments/assets/4aaec3f8-6a6a-4664-8d0d-167fddbd4025)
+This image showcases the robot's trajectory visualization in a mapped environment using ROS2 and RViz.
 
 ---
 
@@ -137,5 +125,21 @@ This flowchart illustrates the process of collecting, saving, and visualizing a 
 
 ---
 
+## 📂 Project Structure:
+```
+trajectory_logger/
+│── include/
+│   ├── trajectory_logger/
+│── src/
+│   ├── trajectory_publisher.cpp    # Trajectory Publisher and Saver Node
+│   ├── trajectory_reader.cpp       # Trajectory Reader and Publisher Node
+│── srv/
+│   ├── SaveTrajectory.srv
+│── CMakeLists.txt                  # CMake build configuration
+│── package.xml
+│── README.md
+```
+
+---
 
 
