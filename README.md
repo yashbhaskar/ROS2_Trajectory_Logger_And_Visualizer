@@ -78,6 +78,12 @@ This image showcases the robot's trajectory visualization in a mapped environmen
 
 ---
 
+## 📽️ Video Demonstration: Robot Trajectory Tracking & Visualization in ROS2
+
+https://drive.google.com/file/d/1xaM5Kn9YMzeJ0jUUFf2rSthsn5pK-VOP/view
+
+---
+
 ## 📡 Flowchart:
 This flowchart illustrates the process of collecting, saving, and visualizing a robot's trajectory using ROS2.
 ![Untitled Diagram drawio](https://github.com/user-attachments/assets/48f683cf-ea5b-4a72-8182-b92143e600ff)
@@ -141,5 +147,17 @@ trajectory_logger/
 ```
 
 ---
+
+## 🤝 Contributing
+
+Feel free to fork this repository, create a pull request, or open an issue if you have suggestions or find bugs.
+
+---
+
+## ✉️ Contact
+
+📧 Yash Bhaskar – ybbhaskar19@gmail.com
+📌 GitHub: https://github.com/yashbhaskar
+
 
 
