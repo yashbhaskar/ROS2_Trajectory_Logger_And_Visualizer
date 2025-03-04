@@ -98,42 +98,42 @@ This flowchart illustrates the process of collecting, saving, and visualizing a 
 
 ## ⚙️ Algorithm for Trajectory Processing
 
-- 1. Start the trajectory processing system
-- 2. Initialize necessary ROS2 nodes
-    Create the Publisher Node for publishing trajectory markers.
-    Create the Saver Node for storing trajectory data.
-    Create the Reader Node for loading and publishing stored trajectories.
-- 3. Subscribe to the robot's pose topic
-    Retrieve pose information (x, y, z, orientation).
-    Store pose data in a trajectory list.
-- 4. Continuously collect robot’s pose data
-    Append each pose update to the trajectory list.
-- 5. Publish the trajectory as a MarkerArray
-    Convert trajectory points into ROS visualization markers.
-    Publish them to be visualized in RViz.
-- 6. Check if the user requests to save trajectory data
-    If YES, proceed to Step 7.
-    If NO, continue collecting trajectory data.
-- 7. Save trajectory data to a file
-    Allow the user to specify:
-        Filename (e.g., trajectory.json, trajectory.csv)
-        Duration (e.g., last 10 seconds of data)
-    Extract the trajectory data for the specified duration.
-    Format and store data in JSON, CSV, or YAML format.
-    Confirm that the file has been saved successfully.
-- 8. Check if the user requests to load a saved trajectory
-    If YES, proceed to Step 9.
-    If NO, end the process.
-- 9. Read the stored trajectory data from the file
-    Parse the selected file format (JSON, CSV, or YAML).
-- 10. Transform trajectory data to the odom frame
-    Ensure consistency between the stored data and the current robot environment.
-- 11. Publish the loaded trajectory for visualization
-    Convert the loaded trajectory to MarkerArray format.
-    Publish the trajectory to RViz for display.
-- 12. Continue collecting new trajectory data or exit
-    If the user stops the process, terminate trajectory collection.
-    Shut down ROS nodes gracefully.
+1. Start the trajectory processing system
+2. Initialize necessary ROS2 nodes
+    - Create the Publisher Node for publishing trajectory markers.
+    - Create the Saver Node for storing trajectory data.
+    - Create the Reader Node for loading and publishing stored trajectories.
+3. Subscribe to the robot's pose topic
+    - Retrieve pose information (x, y, z, orientation).
+    - Store pose data in a trajectory list.
+4. Continuously collect robot’s pose data
+    - Append each pose update to the trajectory list.
+5. Publish the trajectory as a MarkerArray
+    - Convert trajectory points into ROS visualization markers.
+    - Publish them to be visualized in RViz.
+6. Check if the user requests to save trajectory data
+    - If YES, proceed to Step 7.
+    - If NO, continue collecting trajectory data.
+7. Save trajectory data to a file
+    - Allow the user to specify:
+        - Filename (e.g., trajectory.json, trajectory.csv)
+        - Duration (e.g., last 10 seconds of data)
+    - Extract the trajectory data for the specified duration.
+    - Format and store data in JSON, CSV, or YAML format.
+    - Confirm that the file has been saved successfully.
+8. Check if the user requests to load a saved trajectory
+    - If YES, proceed to Step 9.
+    - If NO, end the process.
+9. Read the stored trajectory data from the file
+    - Parse the selected file format (JSON, CSV, or YAML).
+10. Transform trajectory data to the odom frame
+    - Ensure consistency between the stored data and the current robot environment.
+11. Publish the loaded trajectory for visualization
+    - Convert the loaded trajectory to MarkerArray format.
+    - Publish the trajectory to RViz for display.
+12. Continue collecting new trajectory data or exit
+    - If the user stops the process, terminate trajectory collection.
+    - Shut down ROS nodes gracefully.
 
 ---
 
